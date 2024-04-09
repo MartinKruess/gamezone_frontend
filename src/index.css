@@ -1,0 +1,1348 @@
+@charset "UTF-8";
+:root {
+  font-size: 62.5%;
+  --primary: #0d1117;
+  --secondary: #161b22;
+  --font: #ededed;
+  --button01: #ed0000;
+  --button02: #ed3300;
+  --button03: #ed7733;
+  --highlights: #009999;
+  --smallSpacer: 0.5rem;
+  --mediumSpacer: 1rem;
+  --largeSpacer: 1.5rem;
+  --xlargeSpacer: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--font);
+  max-width: 98vw;
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  border: solid red;
+}
+
+section {
+  width: 85%;
+  margin: auto;
+}
+
+article {
+  padding: 3rem 0;
+}
+
+h1, h2, h3, h4 {
+  width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  margin: var(--largeSpacer) 0 var(--smallSpacer);
+  padding: var(--mediumSpacer) 0 var(--smallSpacer);
+}
+
+.spacer {
+  max-width: 40%;
+}
+
+.button, button {
+  background-color: var(--button02);
+  color: var(--font);
+  width: 13.5rem;
+  padding: var(--mediumSpacer) var(--largeSpacer);
+  margin: 0 1rem;
+  border: solid 1px;
+  border-radius: 0.8rem;
+}
+
+button:hover, button:hover {
+  background-color: var(--button03);
+  color: var(--secondary);
+  font-weight: 600;
+  border: solid 3px var(--button02);
+}
+
+a {
+  width: 100%;
+  color: var(--font);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(204, 204, 204, 0.9333333333);
+  color: var(--secondary);
+  font-weight: 600;
+} 
+.headerContainer {
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer .logoContainer {
+  width: 15rem;
+  height: 100%;
+}
+.headerContainer .logoContainer img {
+  height: 100%;
+}
+.headerContainer .socialContainer {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+}
+.headerContainer .socialContainer a {
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--mediumSpacer) var(--smallSpacer);
+  margin-top: var(--mediumSpacer);
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+.headerContainer .socialContainer .discord {
+  padding: var(--smallSpacer);
+}
+
+.navbarContainer {
+  background-color: var(--secondary);
+  width: 98%;
+  display: flex;
+  justify-content: end;
+  margin: auto;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbarContainer i {
+  font-size: 2.1rem;
+}
+.navbarContainer .dropdownMenu {
+  background-color: var(--secondary);
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  top: 7.5rem;
+  right: 2rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  box-shadow: var(--highlights) 1px 1px 1px, var(--highlights) -1px -1px 1px, var(--highlights) -1px 1px 1px, var(--highlights) 1px -1px 1px;
+}
+.navbarContainer .dropdownMenu i {
+  padding: 0.5rem 0 0 0.7rem;
+}
+.navbarContainer .dropdownMenu a {
+  max-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem auto;
+  padding-right: 0.8rem;
+}
+
+.footerContainer {
+  background-color: var(--secondary);
+  height: 13.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: var(--xlargeSpacer);
+  padding: var(--xlargeSpacer);
+}
+.footerContainer .aboutContainer {
+  width: 30%;
+}
+.footerContainer .linkContainer {
+  min-width: 40%;
+  font-size: 4rem;
+  padding: var(--mediumSpacer);
+}
+.footerContainer .linkContainer i {
+  width: 8rem;
+  height: 100%;
+  border: none;
+  padding: var(--mediumSpacer);
+}
+.footerContainer .linkContainer a:hover {
+  background-color: transparent;
+}
+.footerContainer .linkContainer .fa-discord {
+  color: var(--font);
+}
+.footerContainer .linkContainer .fa-discord:hover {
+  background-color: blue;
+  color: var(--secondary);
+}
+.footerContainer .linkContainer .fa-twitch {
+  color: rgba(172, 46, 210, 0.872);
+}
+.footerContainer .linkContainer .fa-youtube {
+  color: rgb(198, 6, 6);
+}
+.footerContainer .linkContainer .fa-twitch:hover, .footerContainer .linkContainer .fa-youtube:hover {
+  background-color: var(--font);
+}
+.footerContainer .linkContainer .fa-tiktok {
+  color: var(--primary);
+}
+.footerContainer .linkContainer .fa-tiktok:hover {
+  background-color: var(--primary);
+  color: var(--font);
+}
+.footerContainer .linkContainer .fa-patreon {
+  color: rgba(255, 77, 0, 0.867);
+}
+.footerContainer .linkContainer .fa-patreon:hover {
+  color: rgb(254, 100, 34);
+}
+.footerContainer ul li {
+  list-style: none;
+}
+
+.landingpage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.landingpage .aboutContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.landingpage .aboutContainer .imgContainer {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.landingpage .aboutContainer .imgContainer .carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  transition: cubic-bezier(5);
+}
+.landingpage .aboutContainer .imgContainer .carousel i {
+  width: 4.8rem;
+  font-size: 4rem;
+  text-align: center;
+  align-self: center;
+  padding: 5.5rem 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel i:hover {
+  background-color: var(--secondary);
+  color: red;
+}
+.landingpage .aboutContainer .imgContainer .carousel div {
+  width: 50rem;
+  height: 30rem;
+  overflow: hidden;
+}
+.landingpage .aboutContainer .imgContainer .carousel div img {
+  width: 100%;
+  height: 100%;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer {
+  background-color: var(--secondary);
+  width: 34rem;
+  height: 58rem;
+  position: relative;
+  border: solid red 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), 0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4);
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer h3 {
+  height: 6rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .shopPreviewCard {
+  width: 80%;
+  height: auto;
+  margin: 0.8rem auto;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .shopPreviewCard img {
+  width: 100%;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .description {
+  width: 80%;
+  height: 15rem;
+  font-size: 1.4rem;
+  text-align: start;
+  margin: auto;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .description p {
+  margin: 0.5rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .cardFooter {
+  width: 85%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 7.5%;
+  bottom: 1rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .cardFooter .price {
+  width: 30%;
+  height: 3.5rem;
+  font-size: 2.2rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .cardFooter a {
+  background-color: var(--button02);
+  width: 40%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+.landingpage .aboutContainer .imgContainer .carousel .shopPreviewContainer .cardFooter a:hover {
+  background-color: var(--button01);
+  color: var(--font);
+  font-weight: 600;
+}
+.landingpage .newArticle {
+  display: flex;
+  justify-content: center;
+}
+.landingpage .newArticle .article {
+  width: 40%;
+  margin: auto;
+  padding: 1rem 3rem;
+  border: solid 1px;
+  box-shadow: inset 1px 1px 1px #000, inset 1px 1px 1px #242629;
+}
+.landingpage .newArticle .article h2 {
+  text-align: start;
+  border-bottom: solid;
+}
+.landingpage .newArticle .article p {
+  text-align: justify;
+}
+
+.basicNewsCard {
+  background-color: var(--secondary);
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem auto;
+  padding: var(--largeSpacer);
+}
+.basicNewsCard .newsHeadLine {
+  width: 100%;
+  display: flex;
+  border-bottom: solid 1px #ccc;
+}
+.basicNewsCard .newsHeadLine h2 {
+  width: 80%;
+  text-align: start;
+  padding: 0 var(--mediumSpacer);
+}
+.basicNewsCard .newsHeadLine .date {
+  width: 20%;
+  text-align: end;
+}
+.basicNewsCard .newsDescription {
+  width: 100%;
+  padding: var(--mediumSpacer);
+  margin: var(--mediumSpacer) 0;
+  border-bottom: 1px solid #ccc;
+}
+.basicNewsCard .newsDetails {
+  width: 60%;
+  text-align: center;
+  padding: var(--mediumSpacer);
+  margin: var(--mediumSpacer) auto;
+  border: solid 2px red;
+}
+.basicNewsCard .paragraphs {
+  width: 100%;
+}
+.basicNewsCard .paragraphs .paraTitle {
+  padding: var(--largeSpacer) 0 var(--smallSpacer) 0;
+  margin: var(--largeSpacer) 0 var(--smallSpacer) 0;
+}
+.basicNewsCard .paragraphs .contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--mediumSpacer) auto;
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent {
+  min-width: 100%;
+  margin: auto;
+  padding: var(--mediumSpacer);
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent img {
+  max-width: 100%;
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent .left {
+  width: 50%;
+  float: left;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent .right {
+  width: 50%;
+  float: right;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent .banner {
+  width: 100%;
+  float: none;
+}
+.basicNewsCard .paragraphs .contentContainer .paraContent .icon {
+  width: 20%;
+  float: right;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+
+.modal .part {
+  padding: var(--smallSpacer);
+  margin: var(--smallSpacer) 0;
+}
+
+.shopContainer {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--mediumSpacer);
+  margin: auto;
+}
+.shopContainer .shopFilter {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0.5rem;
+}
+.shopContainer .shopFilter select {
+  background-color: transparent;
+  color: var(--font);
+  width: 15rem;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+  margin: var(--smallSpacer);
+  border-radius: var(--smallSpacer);
+}
+.shopContainer .shopFilter select option {
+  background-color: #ccc;
+  color: var(--primary);
+}
+.shopContainer article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shopContainer article .shopPreviewContainer {
+  background-color: var(--secondary);
+  width: 38rem;
+  height: 60rem;
+  margin: 1.5rem 1.5rem;
+  position: relative;
+  border: solid red 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), 0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4);
+}
+.shopContainer article .shopPreviewContainer h3 {
+  height: 6rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.shopContainer article .shopPreviewContainer .shopPreviewCard {
+  width: 80%;
+  height: auto;
+  margin: 0.8rem auto;
+}
+.shopContainer article .shopPreviewContainer .shopPreviewCard img {
+  width: 100%;
+}
+.shopContainer article .shopPreviewContainer .description {
+  width: 80%;
+  height: 15rem;
+  font-size: 1.4rem;
+  text-align: start;
+  margin: auto;
+}
+.shopContainer article .shopPreviewContainer .description p {
+  margin: 0.5rem;
+}
+.shopContainer article .shopPreviewContainer .cardFooter {
+  width: 85%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 7.5%;
+  bottom: 1rem;
+}
+.shopContainer article .shopPreviewContainer .cardFooter .price {
+  width: 30%;
+  height: 3.5rem;
+  font-size: 2.2rem;
+}
+.shopContainer article .shopPreviewContainer .cardFooter a {
+  background-color: var(--button02);
+  width: 40%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
+.shopContainer article .shopPreviewContainer .cardFooter a:hover {
+  background-color: var(--button01);
+  color: var(--font);
+  font-weight: 600;
+}
+
+.terminContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.terminContainer .dateBG {
+  background: url("../public/images/particles.gif") 100%/cover no-repeat;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 9rem;
+}
+.terminContainer .dateBG .date {
+  background: linear-gradient(45deg, rgba(17, 16, 16, 0.8) 0%, rgba(24, 24, 24, 0.4) 60%, rgba(80, 79, 79, 0.8) 120%);
+  width: 30rem;
+  height: 30rem;
+  margin: auto;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  border: solid 1px var(--font);
+  border-radius: 5rem;
+  box-shadow: 2px 2px 6px 2px #959595, 2px 2px 6px 2px #e20a0a, -2px 2px 6px 2px #959595, 2px -2px 6px 2px #e20a0a;
+}
+.terminContainer .dateBG .date h2 {
+  font-size: 3.4rem;
+}
+.terminContainer .dateBG .date p {
+  font-size: 1.6rem;
+}
+.terminContainer .dateBG .date .dateText {
+  color: rgba(237, 237, 237, 0.4);
+  font-size: 4.3rem;
+}
+
+.streamplanContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: var(--largeSpacer);
+}
+.streamplanContainer .planContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: auto;
+}
+.streamplanContainer .planContainer .planCard {
+  background-color: var(--secondary);
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 0.7rem;
+  border: solid var(--secondary);
+}
+.streamplanContainer .planContainer .planCard .streamHeader {
+  font-size: 2rem;
+  padding: var(--mediumSpacer);
+}
+.streamplanContainer .planContainer .planCard .day, .streamplanContainer .planContainer .planCard .video {
+  width: 40%;
+}
+.streamplanContainer .planContainer .planCard .video video {
+  height: 19rem;
+  border-radius: 50%;
+}
+.streamplanContainer .planContainer .planCard .social {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 4rem;
+}
+.streamplanContainer .planContainer .planCard .social i {
+  width: 100%;
+}
+.streamplanContainer .planContainer .free {
+  height: 12rem;
+}
+.streamplanContainer .planContentConatiner {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.createForm {
+  background-color: var(--secondary);
+  width: 80%;
+  min-height: 60rem;
+  margin: var(--largeSpacer) auto;
+  padding: var(--mediumSpacer);
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px;
+}
+.createForm label {
+  font-size: 2rem;
+  margin: var(--smallSpacer);
+  padding: var(--smallSpacer) var(--largeSpacer);
+  border: solid 1px;
+}
+.createForm input {
+  width: 70%;
+  font-size: 1.8rem;
+  margin: var(--smallSpacer) var(--mediumSpacer);
+  padding: var(--smallSpacer);
+  border-radius: var(--smallSpacer);
+}
+.createForm div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.createForm div label {
+  min-width: 20rem;
+  border: red solid 2px;
+}
+.createForm div input {
+  width: 80%;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+.createForm .counter {
+  position: relative;
+  top: -2rem;
+  left: 90%;
+}
+.createForm .content {
+  width: 100%;
+}
+.createForm textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 30rem;
+  max-height: 30rem;
+  line-height: 1.7rem;
+  margin: var(--mediumSpacer) auto;
+  padding: var(--smallSpacer);
+}
+.createForm .textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 10rem;
+  max-height: 30rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin: var(--mediumSpacer) auto;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+}
+.createForm button {
+  background-color: lightgreen;
+  width: 20%;
+  height: 4rem;
+  padding: var(--smallSpacer);
+  border-radius: 2rem;
+}
+
+.articleMenu {
+  width: 80%;
+  display: flex;
+  margin: 1rem auto -1rem auto;
+  padding: var(--mediumSpacer);
+}
+.articleMenu button {
+  width: 50%;
+  margin: 0.2rem;
+  padding: var(--mediumSpacer);
+  border: solid 1px;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.newSpan {
+  background-color: var(--secondary);
+  color: lightgreen;
+  width: 80%;
+  margin: var(--mediumSpacer);
+  padding: var(--mediumSpacer);
+  border: #999 solid 1px;
+  border-radius: var(--smallSpacer);
+}
+
+.newSpan:hover {
+  border: var(--font) solid 1px;
+}
+
+.createArticle {
+  background-color: lightgreen;
+  width: 40%;
+  margin: var(--mediumSpacer);
+  padding: var(--mediumSpacer);
+  border-radius: var(--smallSpacer);
+}
+
+.loginPage {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginPage .loginContainer {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--xlargeSpacer);
+  border: solid;
+  border-radius: var(--mediumSpacer);
+}
+.loginPage .loginContainer label {
+  width: 100%;
+  margin: var(--smallSpacer);
+}
+.loginPage .loginContainer input {
+  width: 100%;
+  padding: var(--smallSpacer) var(--mediumSpacer);
+  border-radius: var(--smallSpacer);
+}
+.loginPage .loginContainer button {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: var(--mediumSpacer);
+  padding: var(--smallSpacer) var(--mediumSpacer);
+  border-radius: var(--mediumSpacer);
+}
+
+.dashboardContainer {
+  min-height: 80vh;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.dashboardContainer #merch, .dashboardContainer #ca {
+  margin: 13rem 0;
+  padding: 10rem;
+}
+.dashboardContainer .dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dashboardContainer .dashboard .dashboardMenu {
+  width: 25rem;
+  height: 16rem;
+  margin: var(--mediumSpacer);
+  padding: var(--smallSpacer);
+  border: solid 1px;
+}
+.dashboardContainer .dashboard .dashboardMenu i {
+  font-size: 6rem;
+}
+.dashboardContainer .articleForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.dashboardContainer .articleForm h2 {
+  margin-bottom: 2rem;
+}
+.dashboardContainer .articleForm form {
+  background-color: var(--secondary);
+  width: 40%;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: solid 1px var(--secondary);
+  border-radius: 1rem;
+}
+.dashboardContainer .articleForm form label {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.dashboardContainer .articleForm form label span {
+  width: 20rem;
+  display: inline-block;
+  padding: 0 2rem;
+  margin: 0 2rem;
+}
+.dashboardContainer .articleForm form label input, .dashboardContainer .articleForm form label textarea {
+  width: 60rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-left: auto;
+}
+.dashboardContainer .articleForm form label input[name=type],
+.dashboardContainer .articleForm form label input[name=gender],
+.dashboardContainer .articleForm form label input[name=price],
+.dashboardContainer .articleForm form label input[name=drachenmünzen] {
+  width: 16rem;
+}
+.dashboardContainer .articleForm form label textarea {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  resize: none;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.dashboardContainer .articleForm form label input:focus, .dashboardContainer .articleForm form label textarea:focus {
+  background-color: rgb(185, 231, 249);
+  outline-color: red;
+  outline-style: groove;
+}
+.dashboardContainer .articleForm .shopPreviewContainer {
+  background-color: var(--secondary);
+  width: 34rem;
+  height: 58rem;
+  position: relative;
+  border: solid red 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), -0.1rem 0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4), 0.1rem -0.1rem 0.8rem 0.2rem rgba(194, 26, 26, 0.4);
+}
+.dashboardContainer .articleForm .shopPreviewContainer h3 {
+  height: 6rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .shopPreviewCard {
+  width: 80%;
+  height: auto;
+  margin: 0.8rem auto;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .shopPreviewCard img {
+  width: 100%;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .description {
+  width: 80%;
+  height: 15rem;
+  font-size: 1.4rem;
+  text-align: start;
+  margin: auto;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .description p {
+  margin: 0.5rem;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .cardFooter {
+  width: 85%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 7.5%;
+  bottom: 1rem;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .cardFooter .price {
+  width: 30%;
+  height: 3.5rem;
+  font-size: 2.2rem;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .cardFooter a {
+  background-color: var(--button02);
+  width: 40%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+.dashboardContainer .articleForm .shopPreviewContainer .cardFooter a:hover {
+  background-color: var(--button01);
+  color: var(--font);
+  font-weight: 600;
+}
+
+.streamBGContainer {
+  background-color: #111010;
+  width: 100vw;
+  height: 100vh;
+  padding: 2.5rem 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: none;
+  z-index: 3;
+}
+.streamBGContainer .headContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.streamBGContainer .headContainer .videoLogoContainer {
+  width: 40rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.streamBGContainer .headContainer .videoLogoContainer video {
+  width: 100%;
+  transform: translateY(-29%);
+}
+.streamBGContainer .headContainer .breakHeader {
+  color: rgb(26, 25, 25);
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.1rem 0.1rem 1rem #f8c29a;
+}
+.streamBGContainer .headContainer .socialContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.streamBGContainer .headContainer .socialContainer a {
+  width: 25rem;
+}
+.streamBGContainer .headContainer .socialContainer a:hover {
+  background-color: transparent;
+}
+.streamBGContainer .headContainer .socialContainer i {
+  font-size: 4rem;
+}
+.streamBGContainer .headContainer .socialContainer i span {
+  font-size: 2rem;
+}
+.streamBGContainer .headContainer .socialContainer .yt {
+  width: 13rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.3rem #eb2a18;
+  border-top-left-radius: 2rem 1rem;
+  border-top-right-radius: 2rem 1rem;
+  border-bottom-left-radius: 2rem 1rem;
+  border-bottom-right-radius: 2rem 1rem;
+}
+.streamBGContainer .headContainer .socialContainer .yt i {
+  color: #eb2a18;
+  text-shadow: 0 0 0.5rem #eb2a18, 0 0 1rem #eb2a18, 0 0 1.5rem #eb2a18, 0 0 2rem #5b241a, 0 0 2.5rem #5b241a, 0 0 3rem #5b241a;
+  font-size: 6rem;
+}
+.streamBGContainer .headContainer .socialContainer .yt:hover {
+  background-color: #000;
+  box-shadow: inset 0.1rem 0.2rem 0.6rem 0.1rem #f44d4d, 0.1rem 0.2rem 1rem 0.2rem #d12e2e, -0.1rem -0.1rem 0.1rem 0.1rem transparent, -0.1rem 0.1rem 0.1rem 0.1rem transparent, 0.1rem -0.1rem 0.1rem 0.1rem transparent;
+  animation: border 2s;
+}
+.streamBGContainer .headContainer .socialContainer .twitch {
+  color: rgb(149, 33, 226);
+  font-size: 7rem;
+}
+.streamBGContainer .assetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 9rem;
+  padding: 2rem;
+}
+.streamBGContainer .assetContainer .chatContainer {
+  width: 70rem;
+  height: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.streamBGContainer .assetContainer .leftContainer {
+  width: 81rem;
+}
+.streamBGContainer .assetContainer .leftContainer .videoContainer {
+  width: 80rem;
+  height: 45.5rem;
+  border: solid red;
+  border-radius: 0.5rem;
+}
+.streamBGContainer .assetContainer .leftContainer .bottomContainer {
+  height: 24rem;
+  display: flex;
+  margin-top: 2rem;
+  padding: 0.75rem;
+}
+.streamBGContainer .assetContainer .leftContainer .bottomContainer .werbung {
+  height: 100%;
+}
+.streamBGContainer .assetContainer .leftContainer .bottomContainer .command {
+  color: rgb(26, 25, 25);
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.1rem 0.1rem 1rem #f8c29a;
+}
+.streamBGContainer .assetContainer .leftContainer .bottomContainer .textContent {
+  color: #aeaeae;
+  font-size: 2.5rem;
+  padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  /* GLOBAL SETTINGS */
+  .mobileOff, .tabletOff {
+    display: none;
+  }
+  .headerContainer {
+    width: 100%;
+    height: 8rem;
+  }
+  .headerContainer .logoContainer {
+    width: 8rem;
+  }
+  .headerContainer .logoContainer img {
+    height: 100%;
+  }
+  .headerContainer h1 {
+    display: none;
+  }
+  .headerContainer .socialContainer a {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .headerContainer .socialContainer i {
+    font-size: 1.8rem;
+  }
+  .navbarContainer {
+    padding: 1.5rem 0.5rem;
+  }
+  .navbarContainer i {
+    font-size: 1.8rem;
+  }
+  .navbarContainer .button {
+    width: 6rem;
+    margin: 0.4rem;
+    padding: 0.8rem 0;
+  }
+  .navbarContainer .dropdownMenu {
+    width: 70%;
+    right: 15%;
+    padding: 1rem;
+  }
+  .terminContainer {
+    width: 96%;
+  }
+  .terminContainer .dateBG:nth-child(2), .terminContainer .dateBG:nth-child(3) {
+    display: none !important;
+  }
+  .terminContainer .dateBG {
+    width: 26rem;
+    height: 30rem;
+  }
+  .terminContainer .dateBG .date {
+    width: 26rem;
+  }
+  .terminContainer .dateBG .date .dateText {
+    font-size: 2.7rem;
+  }
+  /* LANDINGPAGE */
+  .landingpage {
+    width: 100%;
+  }
+  .landingpage .newArticle {
+    flex-direction: column;
+  }
+  .landingpage .newArticle .article {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  /* STREAMINGPAGE */
+  .streamplanContainer {
+    width: 95%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .streamplanContainer .planContainer {
+    width: 100%;
+  }
+  .streamplanContainer .planContainer .planCard {
+    width: 100%;
+    height: 36rem;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .streamplanContainer .planContainer .planCard .day {
+    width: 80%;
+    font-size: 2rem;
+    margin: var(--mediumSpacer) 0;
+  }
+  .streamplanContainer .planContainer .planCard .day p {
+    font-size: 1.6rem;
+  }
+  .streamplanContainer .planContainer .planCard .video {
+    width: 80%;
+  }
+  .streamplanContainer .planContainer .planCard .video video {
+    width: 80%;
+  }
+  .streamplanContainer .planContainer .planCard .social {
+    width: 50%;
+    font-size: 3.2rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+  .streamplanContainer .planContainer .planCard .social i {
+    width: 20%;
+  }
+  /* CELEST-ABYSS */
+  .celestSection {
+    width: 90%;
+    border: solid;
+  }
+  .celestSection h1 {
+    font-size: 2.8rem;
+  }
+  .celestSection .basicNewsCard {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+  .celestSection .basicNewsCard .newsHeadLine h2 {
+    font-size: 1.5rem;
+  }
+  .celestSection .basicNewsCard .newsHeadLine .date {
+    width: 38%;
+  }
+  /* MERCH-SHOP */
+  .shopContainer {
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
+  }
+  .shopContainer article {
+    margin: 0 0;
+    padding: 0 0;
+    gap: 1rem 1.5rem;
+  }
+  .shopContainer article .shopPreviewContainer {
+    width: 33rem;
+    height: 53rem;
+  }
+  .shopContainer article .shopPreviewContainer h3 {
+    height: 7rem;
+  }
+  .shopContainer article .shopPreviewContainer .description {
+    width: 90%;
+    height: 15rem;
+    font-size: 1.3rem;
+    text-align: start;
+    margin: auto;
+  }
+  .shopContainer article .shopPreviewContainer .description p {
+    margin: 0.2rem;
+  }
+  .shopContainer article .shopPreviewContainer .cardFooter {
+    width: 90%;
+  }
+  .shopContainer article .shopPreviewContainer .cardFooter .price {
+    width: 28%;
+    font-size: 1.8rem;
+  }
+  .shopContainer article .shopPreviewContainer .cardFooter a {
+    width: 45%;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .footerContainer {
+    width: 100%;
+  }
+  .footerContainer .aboutContainer {
+    width: 25%;
+    height: 90%;
+    font-size: 1.4rem;
+    padding: 0;
+  }
+  .footerContainer .linkContainer {
+    min-width: 15%;
+    font-size: 2rem;
+    padding: 0;
+  }
+  .footerContainer .linkContainer i {
+    width: 4rem;
+    height: 80%;
+    padding: var(--mediumSpacer);
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 992px) {
+  /* GLOBAL SETTINGS */
+  .mobileOff, .tabletOff {
+    display: none;
+  }
+  .headerContainer {
+    height: 12rem;
+  }
+  .headerContainer .logoContainer {
+    width: 12rem;
+  }
+  .headerContainer h1 {
+    display: none;
+  }
+  .terminContainer .dateBG:nth-child(2), .terminContainer .dateBG:nth-child(3) {
+    display: none !important;
+  }
+  /* LANDINGPAGE */
+  .landingpage .newArticle {
+    flex-direction: column;
+  }
+  .landingpage .newArticle .article {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .streamplanContainer {
+    flex-direction: column;
+    padding: 0;
+    border: solid red;
+  }
+  .streamplanContainer .planContainer {
+    width: 100%;
+  }
+  .streamplanContainer .planContainer .planCard {
+    width: 100%;
+    height: 44rem;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .streamplanContainer .planContainer .planCard .day {
+    width: 80%;
+    font-size: 2rem;
+    margin: var(--mediumSpacer) 0;
+  }
+  .streamplanContainer .planContainer .planCard .day p {
+    font-size: 1.6rem;
+  }
+  .streamplanContainer .planContainer .planCard .video {
+    width: 100%;
+  }
+  .streamplanContainer .planContainer .planCard .video video {
+    width: 100%;
+  }
+  .streamplanContainer .planContainer .planCard .social {
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+  .streamplanContainer .planContainer .planCard .social i {
+    width: 20%;
+  }
+  .streamplanContainer .planContainer .free {
+    height: 12rem;
+  }
+  /* CELEST-ABYSS */
+  .celestSection {
+    width: 80%;
+  }
+  .celestSection .basicNewsCard {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+  }
+  .celestSection .basicNewsCard .newsHeadLine h2 {
+    font-size: 1.8rem;
+  }
+  .celestSection .basicNewsCard .newsHeadLine .date {
+    width: 38%;
+  }
+  /* MERCH-SHOP */
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  /* GLOBAL SETTINGS */
+  .tabletOff {
+    display: none;
+  }
+  .landingpage .newArticle {
+    flex-direction: column;
+  }
+  .landingpage .newArticle .article {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .terminContainer .dateBG {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5rem;
+  }
+  .terminContainer .dateBG .date {
+    width: 20rem;
+    height: 20rem;
+    padding: 0.2rem 0.9rem;
+  }
+  .terminContainer .dateBG .date h2 {
+    font-size: 2.2rem;
+    padding-top: 0;
+    padding-bottom: 0.2rem;
+  }
+  .terminContainer .dateBG .date p {
+    font-size: 1.5rem;
+  }
+  .terminContainer .dateBG .date .dateText {
+    font-size: 2.1rem;
+    right: 3.5rem;
+  }
+  .streamplanContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: var(--largeSpacer);
+  }
+  .streamplanContainer .planContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: auto;
+  }
+  .streamplanContainer .planContainer .planCard {
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 0.7rem;
+    padding: var(--smallSpacer);
+  }
+  .streamplanContainer .planContainer .planCard .day, .streamplanContainer .planContainer .planCard .video, .streamplanContainer .planContainer .planCard .freeContainer {
+    width: 50%;
+  }
+  .streamplanContainer .planContainer .free {
+    height: 12rem;
+  }
+  /* CELEST-ABYSS */
+  /* MERCH-SHOP */
+}/*# sourceMappingURL=index.css.map */

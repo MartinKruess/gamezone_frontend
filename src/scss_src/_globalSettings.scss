@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--font);
+  max-width: 98vw;
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main{
+  border: solid red;
+}
+
+section {
+  width: 85%;
+  margin: auto;
+}
+
+article {
+  padding: 3rem 0;
+}
+
+h1, h2, h3, h4 {
+  width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  margin: var(--largeSpacer) 0 var(--smallSpacer);
+  padding: var(--mediumSpacer) 0 var(--smallSpacer);
+}
+
+.spacer {
+  max-width: 40%;
+}
+
+.button, button {
+  background-color: var(--button02);
+  color: var(--font);
+  width: 13.5rem;
+  padding: var(--mediumSpacer) var(--largeSpacer);
+  margin: 0 1rem;
+  border: solid 1px;
+  border-radius: 0.8rem;
+}
+
+button:hover, button:hover {
+  background-color: var(--button03);
+  color: var(--secondary);
+  font-weight: 600;
+  border: solid 3px var(--button02);
+}
+
+a {
+  width: 100%;
+  color: var(--font);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(204, 204, 204, 0.9333333333);
+  color: var(--secondary);
+  font-weight: 600;
+}/*# sourceMappingURL=globalSettings.css.map */

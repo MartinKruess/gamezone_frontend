@@ -1,0 +1,447 @@
+@media screen and (max-width: 750px) {
+
+  /* GLOBAL SETTINGS */
+
+  .mobileOff, .tabletOff{
+    display: none;
+  }
+
+  .headerContainer{
+    width: 100%;
+    height: 8rem;
+
+    .logoContainer{
+      width: 8rem;
+  
+      img{
+        height: 100%;
+      }
+    }
+
+    h1{
+      display: none;
+    }
+
+    .socialContainer{
+      a{
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      i{
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .navbarContainer{
+    padding: 1.5rem 0.5rem;
+
+    i{
+      font-size: 1.8rem;
+    }
+
+    .button{
+      width: 6rem;
+      margin: 0.4rem;
+      padding: 0.8rem 0;
+    }
+
+    .dropdownMenu{
+      width: 70%;
+      right: 15%;
+      padding: 1rem;
+    }
+  }
+
+  .terminContainer{
+    width: 96%;
+
+    .dateBG:nth-child(2), .dateBG:nth-child(3) {
+      display: none !important;
+    }
+
+    .dateBG{
+      width: 26rem;
+      height: 30rem;
+  
+      .date{
+        width: 26rem;
+        
+
+        .dateText{
+          font-size: 2.7rem;
+        }
+      }
+    }
+  }
+
+  /* LANDINGPAGE */
+  .landingpage{
+    width: 100%;
+  }
+
+  .landingpage .newArticle{
+    flex-direction: column;
+
+    .article{
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+
+  /* STREAMINGPAGE */
+  
+  .streamplanContainer{
+    width: 95%;
+    flex-direction: column;
+    padding:0;
+
+    .planContainer{
+      width: 100%;
+
+      .planCard{
+        width: 100%;
+        height: 36rem;
+        justify-content: space-around;
+        flex-direction: column;
+        
+        .day{
+          width: 80%;
+          font-size: 2rem;
+          margin: var(--mediumSpacer) 0;
+
+          p{
+            font-size: 1.6rem;
+          }
+        }
+
+        .video{
+          width: 80%;
+          
+          video{
+            width: 80%
+          }
+        }
+
+        .social{
+          width: 50%;
+          font-size: 3.2rem;
+          flex-direction: row;
+          align-items: center;
+          padding: 0 0.5rem;
+
+          i{
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  /* CELEST-ABYSS */
+
+  .celestSection{
+    width: 90%;
+    border: solid;
+
+    h1{
+      font-size: 2.8rem;
+    }
+
+    .basicNewsCard{
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+
+      .newsHeadLine{
+        h2{
+          font-size: 1.5rem;
+        }
+        .date{
+          width: 38%;
+        }
+      }
+    }
+  }
+
+  /* MERCH-SHOP */
+
+  .shopContainer {
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
+
+    article{
+      margin: 0 0;
+      padding: 0 0;
+      gap: 1rem 1.5rem;
+      
+      .shopPreviewContainer{
+        width: 33rem;
+        height: 53rem;
+
+        h3{
+          height: 7rem;
+        }
+
+        .description{
+          width: 90%;
+          height: 15rem;
+          font-size: 1.3rem;
+          text-align: start;
+          margin: auto;
+  
+          p{
+            margin: 0.2rem;
+          }
+        }
+
+        .cardFooter{
+          width: 90%;
+
+          .price{
+            width: 28%;
+            font-size: 1.8rem;
+          }
+
+          a{
+            width: 45%;
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .footerContainer{
+    width: 100%;
+
+    .aboutContainer{
+      width: 25%;
+      height: 90%;
+      font-size: 1.4rem;
+      padding: 0;
+    }
+
+    .linkContainer{
+      min-width: 15%;
+      font-size: 2rem;
+      padding: 0;
+
+      i{
+        width: 4rem;
+        height: 80%;
+        padding: var(--mediumSpacer);
+      }
+    }
+  }
+
+  
+}
+
+@media screen and (min-width: 751px) and (max-width: 992px) {
+
+  /* GLOBAL SETTINGS */
+
+  .mobileOff, .tabletOff{
+    display: none;
+  }
+
+  .headerContainer{
+    height: 12rem;
+
+    .logoContainer{
+      width: 12rem;
+    }
+
+    h1{
+      display: none;
+    }
+  }
+
+  .terminContainer{
+    .dateBG:nth-child(2), .dateBG:nth-child(3) {
+      display: none !important;
+    }
+  }
+
+  
+  /* LANDINGPAGE */
+
+  .landingpage .newArticle{
+    flex-direction: column;
+
+    .article{
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+  
+ 
+  
+  .streamplanContainer{
+    flex-direction: column;
+    padding:0;
+    border: solid red;
+
+    .planContainer{
+      width: 100%;
+
+      .planCard{
+        width: 100%;
+        height: 44rem;
+        justify-content: space-around;
+        flex-direction: column;
+        
+        .day{
+          width: 80%;
+          font-size: 2rem;
+          margin: var(--mediumSpacer) 0;
+
+          p{
+            font-size: 1.6rem;
+          }
+        }
+
+        .video{
+          width: 100%;
+          
+          video{
+            width: 100%
+          }
+        }
+
+        .social{
+          width: 50%;
+          flex-direction: row;
+          align-items: center;
+          padding: 0 0.5rem;
+
+          i{
+            width: 20%;
+          }
+        }
+      }
+
+      .free{
+        height: 12rem;
+      }
+    }
+  }
+
+   /* CELEST-ABYSS */
+
+   .celestSection{
+    width: 80%;
+
+    .basicNewsCard{
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 2rem 0;
+
+      .newsHeadLine{
+        h2{
+          font-size: 1.8rem;
+        }
+        .date{
+          width: 38%;
+        }
+      }
+    }
+  }
+
+  /* MERCH-SHOP */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px)  {
+
+/* GLOBAL SETTINGS */
+
+  .tabletOff{
+    display: none;
+  }
+
+  .landingpage .newArticle{
+    flex-direction: column;
+
+    .article{
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+
+  .terminContainer{
+    .dateBG{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 5rem;
+  
+      .date{
+        width: 20rem;
+        height: 20rem;
+        padding: 0.2rem 0.9rem;
+    
+        h2{
+          font-size: 2.2rem;
+          padding-top: 0;
+          padding-bottom: 0.2rem;
+        }
+
+        p{
+          font-size: 1.5rem;
+        }
+    
+        .dateText{
+          font-size: 2.1rem;
+          right: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .streamplanContainer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: var(--largeSpacer);
+    
+  
+    .planContainer{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin: auto;
+
+      .planCard{
+        width: 100%;
+        height: 22rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        font-size: 2.6rem;
+        font-weight: 600;
+        margin: 0.7rem;
+        padding: var(--smallSpacer);
+        
+
+        .day, .video, .freeContainer{
+          width: 50%;
+        }
+      }
+
+      .free{
+        height: 12rem;
+      }
+    }
+  }
+  
+  /* CELEST-ABYSS */
+
+  /* MERCH-SHOP */
+}
+  
+  

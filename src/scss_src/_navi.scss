@@ -1,0 +1,43 @@
+// Navbar
+.navbarContainer {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: end;
+  margin: auto;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  i {
+    font-size: 2.1rem;
+  }
+
+  .dropdownMenu {
+    background-color: var(--secondary);
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 7.5rem;
+    right: 2rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    box-shadow: var(--highlights) 1px 1px 1px, var(--highlights) -1px -1px 1px,
+      var(--highlights) -1px 1px 1px, var(--highlights) 1px -1px 1px;
+
+    i {
+      padding: 0.5rem 0 0 0.7rem;
+    }
+
+    a {
+      max-width: 20rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 0.3rem auto;
+      padding-right: 0.8rem;
+    }
+  }
+}
