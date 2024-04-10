@@ -13,7 +13,7 @@ export const IMGContainer = () => {
       alt: "Titelbild des Spieles Realm Royale reforged",
     },
     {
-      url: "./images/TowerOfFantasy.jpg",
+      url: "./images/towerOfFantasy.jpg",
       alt: "Titelbild des Spieles Tower of Fantasy im Eis Biom",
     },
     {
@@ -39,7 +39,7 @@ export const IMGContainer = () => {
   };
 
   const nextImg = () => {
-    setCurrentImg(currentImg === sliderImages.length - 1 ? 0 : currentImg + 2);
+    setCurrentImg(currentImg === sliderImages.length - 1 ? 0 : currentImg + 1);
   };
 
   return (
