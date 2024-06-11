@@ -20,7 +20,7 @@ import { StreamBG } from "./pages/streamBG";
 // import { CaArticle } from "./pages/caArticle";
 // import { CreateMerchArticle } from "./pages/management/createMerchArticle";
 
-export const backendURL = "https://gamezone.cyclic.app/";
+export const backendURL = "https://gamezone-backend-es8b.onrender.com";
 // export const backendURL = "http://localhost:5500/";
 
 function App() {
