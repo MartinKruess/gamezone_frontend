@@ -45,8 +45,7 @@ export const NewsCard = () => {
             <h2>{article.title}</h2>
             <h2 className="date">{article.date}</h2>
           </div>
-
-          {!toggle && <p className="newsDescription">{article.description}</p>}
+          {<p className="newsDescription">{article.description}</p>}
           <button className="newsDetails" onClick={() => handleToggle(i)}>
             zum Artikel
           </button>
